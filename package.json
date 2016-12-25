@@ -1,0 +1,23 @@
+{
+  "name": "hypernasa",
+  "version": "1.0.0",
+  "description": "nasa picture of the day background image for hyper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cseale/hypernasa.git"
+  },
+  "keywords": [
+    "nasa",
+    "hyper"
+  ],
+  "author": "Colm Seale",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cseale/hypernasa/issues"
+  },
+  "homepage": "https://github.com/cseale/hypernasa#readme"
+}
