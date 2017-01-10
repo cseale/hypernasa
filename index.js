@@ -3,7 +3,7 @@ const { nasaApiKey } = require('./nasa-api-key');
 exports.decorateConfig = (config) => {
   return Object.assign({}, config, {
     backgroundColor: 'transparent'
-  });;
+  });
 }
 
 exports.decorateHyper = (Hyper, { React }) => {
@@ -26,16 +26,18 @@ exports.decorateHyper = (Hyper, { React }) => {
     }
 
     render () {
-      let css = `${config.css || ''}
-        .hyper_main {
-          background-color: #000;
-        }`;
+      let css;
 
       if (this.state && this.state.image) {
-        css = `${config.css || ''}
+        css = `
           .hyper_main {
             background-image: url(${this.state.image});
             background-size: cover;
+            background-color: #000;
+          }`;
+      } else {
+        css = `
+          .hyper_main {
             background-color: #000;
           }`;
       }
