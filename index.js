@@ -16,11 +16,11 @@ exports.decorateHyper = (Hyper, { React }) => {
     }
 
     _fetchImage () {
-      const potdImageUrl= `https://api.nasa.gov/planetary/apod?api_key=${nasaApiKey}&hd=true`;
+      const potdImageUrl= `https://api.nasa.gov/planetary/apod?api_key=${nasaApiKey}`;
 
       fetch(potdImageUrl).then((response) => {
         response.json().then((data) => {
-          this.setState({image: data.url});
+          this.setState({image: data.hdurl || data.url});
         });
       });
     }
