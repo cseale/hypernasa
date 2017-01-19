@@ -31,7 +31,7 @@ exports.decorateHyper = (Hyper, { React }) => {
       if (this.state && this.state.image) {
         css = `
           .hyper_main {
-            background-image: url(${this.state.image});
+            background-image: url(\"${this.state.image}\");
             background-size: cover;
             background-color: #000;
           }`;
