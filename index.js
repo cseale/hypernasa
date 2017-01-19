@@ -26,6 +26,10 @@ exports.decorateConfig = (config) => {
         background-color: ${overlayColor};
         opacity: ${overlayOpacity};
       }
+
+      .tab_tab {
+        background-color: transparent !important;
+      }
     `
   });
 }
