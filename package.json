@@ -16,10 +16,13 @@
     "hypernasa"
   ],
   "author": "Colm Seale",
-  "contributors": {
+  "contributors": [{
     "name": "Casey Webb",
     "url": "https://github.com/caseyWebb"
-  },
+  }, {
+    "name": "Jack Tuck",
+    "url": "https://github.com/jacktuck"
+  }],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cseale/hypernasa/issues"
