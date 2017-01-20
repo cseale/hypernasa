@@ -1,6 +1,6 @@
 {
   "name": "hypernasa",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "nasa picture of the day background image for hyper",
   "main": "index.js",
   "scripts": {
@@ -16,10 +16,13 @@
     "hypernasa"
   ],
   "author": "Colm Seale",
-  "contributors": {
+  "contributors": [{
     "name": "Casey Webb",
     "url": "https://github.com/caseyWebb"
-  },
+  }, {
+    "name": "Jack Tuck",
+    "url": "https://github.com/jacktuck"
+  }],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cseale/hypernasa/issues"
