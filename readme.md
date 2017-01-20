@@ -11,6 +11,19 @@ A theme which replaces the terminal background with NASA's Picture of the Day. (
 
 Add `hypernasa` to the plugins list in your `~/.hyper.js` config file.
 
+## Options
+
+*~/.hyper.js*
+```javascript
+module.exports = {
+  config: {
+    hypernasa: {
+      overlayColor: #000,
+      overlayOpacity: .25
+    }
+  }
+}
+```
 
 ## License
 
