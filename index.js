@@ -39,12 +39,20 @@ exports.decorateHyper = (Hyper, { React }) =>
     constructor (props, context) {
       super(props, context);
       this._fetchImage();
+      this._startUpdater();
     }
 
     _fetchImage () {
       fetch(`https://api.nasa.gov/planetary/apod?api_key=${nasaApiKey}`)
         .then((response) => response.json())
         .then(({ hdurl, url }) => this.setState({ image: hdurl || url }));
+    }
+
+    _startUpdater () {
+      const second = 1000
+      const minute = 60 * second
+      const hour = 60 * minute
+      setInterval(this._fetchImage.bind(this), hour)
     }
 
     render () {
