@@ -1,6 +1,6 @@
 {
   "name": "hypernasa",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "nasa picture of the day background image for hyper",
   "main": "index.js",
   "files": [
