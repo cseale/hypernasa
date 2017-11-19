@@ -3,7 +3,7 @@
 const { nasaApiKey } = require('./nasa-api-key');
 
 exports.decorateConfig = (config) => {
-  const { overlayColor = '#000', overlayOpacity = .5 } = config.hypernasa || {};
+  const { overlayColor = '#000', overlayOpacity = .2 } = config.hypernasa || {};
 
   return Object.assign({}, config, {
     backgroundColor: 'transparent',
@@ -12,8 +12,6 @@ exports.decorateConfig = (config) => {
 
       .hyper_main {
         background-color: ${overlayColor};
-        background-size: cover;
-        background-position: center;
       }
 
       .hyper_main:before {
@@ -23,7 +21,9 @@ exports.decorateConfig = (config) => {
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: ${overlayColor};
+        background-size: cover;
+        background-position: center;
+        filter: blur(3px);
         opacity: ${overlayOpacity};
       }
 
@@ -60,7 +60,7 @@ exports.decorateHyper = (Hyper, { React }) =>
         customCSS: `
           ${this.props.customCSS}
 
-          .hyper_main {
+          .hyper_main:before {
             background-image: url("${this.state && this.state.image}");
           }
         `
