@@ -78,7 +78,7 @@ exports.decorateHyper = (Hyper, { React }) =>
       var style = {}, content = null;
       if (this.state) {
         if (this.state.type === "image")
-          style = {backgroundImage: `url("${this.state && this.state.image}");`};
+          style = {backgroundImage: `url("${this.state && this.state.image}")`};
         else if (this.state.type === "youtube") {
           var vidid = this.youtube_parser(this.state.image);
           content = React.createElement("iframe",
