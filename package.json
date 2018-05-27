@@ -20,16 +20,24 @@
     "hypernasa"
   ],
   "author": "Colm Seale",
-  "contributors": [{
-    "name": "Casey Webb",
-    "url": "https://github.com/caseyWebb"
-  }, {
-    "name": "Jack Tuck",
-    "url": "https://github.com/jacktuck"
-  }, {
-    "name": "Dima Paloskin",
-    "url": "https://github.com/dimapaloskin"
-  }],
+  "contributors": [
+    {
+      "name": "Casey Webb",
+      "url": "https://github.com/caseyWebb"
+    },
+    {
+      "name": "Jack Tuck",
+      "url": "https://github.com/jacktuck"
+    },
+    {
+      "name": "Dima Paloskin",
+      "url": "https://github.com/dimapaloskin"
+    },
+    {
+      "name": "Joakim Lindberg",
+      "url": "https://github.com/Booom3"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cseale/hypernasa/issues"

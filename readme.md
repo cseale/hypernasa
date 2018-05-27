@@ -1,4 +1,6 @@
-# hypernasa
+# hypernasa blur
+
+A simple edit that blurs the background image for better text readability.
 
 > Nasa [Hyper](https://hyper.is) extension
 
