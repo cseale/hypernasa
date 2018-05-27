@@ -95,15 +95,6 @@ exports.decorateHyper = (Hyper, { React }) =>
           style: style
         }, content
       ));
-      return React.createElement(Hyper, Object.assign({}, this.props, {customChildren: customChildren}));  
-      return React.createElement(Hyper, Object.assign({}, this.props, {
-        customCSS: `
-          ${this.props.customCSS}
-
-          .hyper_main:after {
-            background-image: url("${this.state && this.state.image}");
-          }
-        `
-      }));
+      return React.createElement(Hyper, Object.assign({}, this.props, {customChildren: customChildren}));
     }
   };
