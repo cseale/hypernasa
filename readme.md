@@ -18,9 +18,10 @@ Add `hypernasa` to the plugins list in your `~/.hyper.js` config file.
 module.exports = {
   config: {
     hypernasa: {
-      overlayColor: #000,
+      overlayColor: '#000',
       overlayOpacity: .25
-    }
+    },
+    plugins: ['hypernasa'],
   }
 }
 ```
